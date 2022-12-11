@@ -1,0 +1,5 @@
+<launch>
+  <node name="gazebo_node" pkg="gazebo_ros" type="gazebo" output="screen"/>
+  <node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+  <node name="point_counter" pkg="scrum_project" type="point_counter.py" output="screen"/>
+</launch>

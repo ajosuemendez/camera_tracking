@@ -11,7 +11,10 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  sensor_msgs
 )
+
+find_package(OpenCV REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -162,6 +165,7 @@ include_directories(
  catkin_install_python(PROGRAMS
    scripts/hello_world.py
    scripts/point_counter.py
+   scripts/display.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 

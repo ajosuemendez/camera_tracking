@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find scrum_project)/launch/gazebo.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+  <node name="point_counter" pkg="scrum_project" type="point_counter.py" output="screen"/>
+</launch>
